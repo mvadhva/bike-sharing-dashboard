@@ -68,7 +68,7 @@ def make_kpi_card(title, value, note, background, border_color, value_color):
 
 # Load data
 BASE_DIR = Path(__file__).resolve().parent
-df = pd.read_csv(BASE_DIR / "data" / "hour.csv")
+df = pd.read_csv(BASE_DIR / "hour.csv")
 
 # Readable labels
 df["season_name"] = df["season"].map(
