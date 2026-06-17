@@ -174,6 +174,27 @@ app.layout = html.Div(
                 html.Li("External events and transit disruptions are not included."),
             ]
         ),
+        html.Hr(),
+
+html.H3("Project Links"),
+
+html.P([
+    "GitHub Repository: ",
+    html.A(
+        "https://github.com/mvadhva/bike-sharing-dashboard",
+        href="https://github.com/mvadhva/bike-sharing-dashboard",
+        target="_blank",
+    )
+]),
+
+html.P([
+    "Final Video: ",
+    html.A(
+        "watch video link",
+        href="https://indiana-my.sharepoint.com/:v:/r/personal/mvadhva_iu_edu/Documents/Final%20video%20Project.webm?csf=1&web=1&e=OPi3NB&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D",
+        target="_blank",
+    )
+]),
     ],
     style={
         "width": "90%",
