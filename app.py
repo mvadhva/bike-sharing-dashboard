@@ -131,26 +131,28 @@ app.layout = html.Div(
 
         html.Div(id="kpi-cards"),
 
-        html.H3("🚲 When Should I Ride?"),
-        html.P(
-            "Use the hourly chart to identify demand patterns throughout the day. "
-            "Lower demand periods are generally better for riders seeking less crowded conditions."
-        ),
-        dcc.Graph(id="hourly-chart"),
+      html.H3("🚲 When Should I Ride?"),
 
-        html.H3("🗓️ When Is Demand Highest Across Seasons?"),
-        html.P(
-            "Each row is a season and each column is an hour of the day. "
-            "Darker colors mean more rentals."
-        ),
-        dcc.Graph(id="heatmap-chart"),
+html.P(
+    "Why this chart? A line chart was chosen because it effectively shows how bike rental demand changes throughout the day. It helps users identify peak and low-demand hours, making it easier to choose the best times to ride."
+),
+
+dcc.Graph(id="hourly-chart"),
+html.H3("🗓️ When Is Demand Highest Across Seasons?"),
+
+html.P(
+    "Why this chart? A heatmap was selected because it allows users to compare bike rental demand across both seasons and hours of the day simultaneously. The color intensity makes high- and low-demand periods easy to identify."
+),
+
+dcc.Graph(id="heatmap-chart"),
 
         html.H3("🌦️ How Much Does Weather Reduce Demand?"),
-        html.P(
-            "Bars show the percent change in rentals versus clear weather. "
-            "Negative values mean fewer rides."
-        ),
-        dcc.Graph(id="weather-chart"),
+
+html.P(
+    "Why this chart? A bar chart was chosen because weather conditions are categorical variables. It clearly compares how each weather condition affects bike rental demand relative to clear weather."
+),
+
+dcc.Graph(id="weather-chart"),
 
         html.H3("Key Findings"),
         html.Ul(
