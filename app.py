@@ -420,8 +420,7 @@ def update_weather_chart(selected_season):
 
     weather["change_pct"] = ((weather["cnt"] / clear_avg) - 1) * 100
 
-    bar_colors = ["#2ca02c", "#f4a261", "#e76f51", "#d62728"]
-
+    bar_colors = ["#9ecae1", "#6baed6", "#3182bd", "#08519c"]
     fig = go.Figure(
         data=go.Bar(
             x=weather["weather_name"],
